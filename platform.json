@@ -80,7 +80,6 @@
     },
     "framework-arduinoespressif32": {
       "type": "framework",
-      "optional": true,
       "owner": "FarhadGUL06",
       "version": "https://github.com/FarhadGUL06/framework-arduinoespressif32/releases/download/v1.0.0/framework-arduinoespressif32.zip"
     },
