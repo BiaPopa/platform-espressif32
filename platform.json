@@ -30,43 +30,60 @@
     }
   },
   "packages": {
+    "framework-arduinoespressif32": {
+      "type": "framework",
+      "owner": "BiaPopa",
+      "version": "https://github.com/BiaPopa/framework-arduinoespressif32/releases/download/v1.0.3/framework-arduinoespressif32.zip"
+    },
+     "framework-arduino-solo1": {
+      "type": "framework",
+      "optional": true,
+      "owner": "tasmota",
+      "version": "https://github.com/Jason2866/esp32-arduino-lib-builder/releases/download/2460/framework-arduinoespressif32-solo1-release_v5.1-371d83e.zip"
+    },
+     "framework-arduino-ITEAD": {
+      "type": "framework",
+      "optional": true,
+      "owner": "tasmota",
+      "version": "https://github.com/Jason2866/esp32-arduino-lib-builder/releases/download/2461/framework-arduinoespressif32-ITEAD-esp32-release_v5.1-371d83e.zip"
+    },
+    "framework-espidf": {
+      "type": "framework",
+      "optional": true,
+      "owner": "tasmota",
+      "version": "https://github.com/tasmota/esp-idf/releases/download/v5.1.4.240602/esp-idf-v5.1.4.zip"
+    },
     "toolchain-xtensa-esp32": {
       "type": "toolchain",
+      "optional": true,
       "owner": "espressif",
-      "version": "8.4.0+2021r2-patch5"
+      "version": "12.2.0+20230208"
     },
     "toolchain-xtensa-esp32s2": {
       "type": "toolchain",
       "optional": true,
       "owner": "espressif",
-      "version": "8.4.0+2021r2-patch5"
+      "version": "12.2.0+20230208"
     },
-     "toolchain-xtensa-esp32s3": {
+    "toolchain-xtensa-esp32s3": {
       "type": "toolchain",
       "optional": true,
       "owner": "espressif",
-      "version": "8.4.0+2021r2-patch5"
+      "version": "12.2.0+20230208"
     },
     "toolchain-riscv32-esp": {
       "type": "toolchain",
       "optional": true,
       "owner": "espressif",
-      "version": "8.4.0+2021r2-patch5",
-      "optionalVersions": ["14.2.0+20241119"]
-    },
-    "toolchain-xtensa-esp-elf": {
-      "type": "toolchain",
-      "optional": true,
-      "owner": "platformio",
-      "version": "14.2.0+20241119"
+      "version": "12.2.0+20230208"
     },
     "toolchain-esp32ulp": {
       "type": "toolchain",
       "optional": true,
       "owner": "platformio",
-      "version": "~1.23800.0"
+      "version": "~1.23500.0"
     },
-    "tool-xtensa-esp-elf-gdb": {
+      "tool-xtensa-esp-elf-gdb": {
       "type": "debugger",
       "optional": true,
       "owner": "espressif",
@@ -78,22 +95,10 @@
       "owner": "espressif",
       "version": "~12.1.0"
     },
-    "framework-arduinoespressif32": {
-      "type": "framework",
-      "owner": "BiaPopa",
-      "version": "https://github.com/BiaPopa/framework-arduinoespressif32/releases/download/v1.0.3/framework-arduinoespressif32.zip"
-    },
-    "framework-espidf": {
-      "type": "framework",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~3.50401.0",
-      "optionalVersions": ["~3.40407.0"]
-    },
     "tool-esptoolpy": {
       "type": "uploader",
-      "owner": "platformio",
-      "version": "~1.40501.0"
+      "owner": "tasmota",
+      "version": "https://github.com/tasmota/esptool/releases/download/v4.7.3/esptool.zip"
     },
     "tool-dfuutil-arduino": {
       "type": "uploader",
@@ -107,17 +112,10 @@
       "owner": "platformio",
       "version": "~2.1100.0"
     },
-    "tool-mkspiffs": {
-      "type": "uploader",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~2.230.0"
-    },
     "tool-mklittlefs": {
       "type": "uploader",
-      "optional": true,
-      "owner": "platformio",
-      "version": "~1.203.0"
+      "owner": "tasmota",
+      "version": "^3.2.0"
     },
     "tool-mkfatfs": {
       "type": "uploader",
@@ -128,7 +126,7 @@
     "tool-cmake": {
       "optional": true,
       "owner": "platformio",
-      "version": "~3.16.0"
+      "version": "~3.21.0"
     },
     "tool-ninja": {
       "optional": true,
@@ -144,11 +142,6 @@
       "optional": true,
       "owner": "platformio",
       "version": "~1.0.1"
-    },
-    "tool-esp-rom-elfs": {
-      "optional": true,
-      "owner": "platformio",
-      "version": "0.0.1+20241011"
     }
   }
 }
